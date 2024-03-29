@@ -8,6 +8,8 @@ Un prodotto è caratterizzato da:
 - descrizione
 - prezzo
 - iva
+
+
   Alla creazione di un nuovo prodotto il codice deve essere valorizzato con un numero random di massimo 8 cifre.
   Il prodotto espone sia un metodo per avere il prezzo base che uno per avere il prezzo comprensivo di iva.
   Il prodotto espone anche un metodo per avere il nome esteso, ottenuto concatenando codice-nome: se il codice è inferiore a 8 cifre fa inserito un pad left di 0.
@@ -19,10 +21,13 @@ Creare la classe Conto caratterizzata da:
 - numero di conto
 - nome del proprietario
 - saldo
-  Inoltre la classe deve esporre
-  un metodo per versare una somma di denaro sul conto
-  uno per prelevare una somma di denaro dal conto (attenzione: il saldo non può mai diventare negativo)
-  altri metodi per ritornare le informazioni del conto e il saldo
+
+Inoltre la classe deve esporre
+- un metodo per versare una somma di denaro sul conto
+- uno per prelevare una somma di denaro dal conto (attenzione: il saldo non può mai diventare negativo)
+- altri metodi per ritornare le informazioni del conto e il saldo.
+
+
   Aggiungere una classe Bank con metodo main, dove chiediamo all’utente il suo nome e generiamo un Conto intestato all’utente con un numero di conto random (da 1 a 1000)
   Poi chiediamo all’utente cosa vuole fare dando 3 opzioni: versare una somma o prelevare una somma di denaro o uscire.
   Dopo la scelta dell’utente chiediamo quanti soldi vuole versare o prelevare e proviamo ad effettuare l’operazione sul conto.
