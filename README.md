@@ -1,6 +1,4 @@
-Oggi cominciamo a ragionare in termini di OOP.
-Gli esercizi sono due e vanno inseriti in un’unica repo: java-oop1
-
+## JAVA-OOP1
 ### Esercizio 1: Java Shop 
 
 Creare la classe Prodotto che gestisce i prodotti dello shop.
