@@ -16,6 +16,8 @@ public class Bank {
 
         // Loop principale per il menu dell'applicazione
         while (true) {
+            System.out.println("Benvenuto " + name);
+            System.out.println("Numero conto " + account.getNumberAccount());
             // Visualizza il saldo dell'account corrente
             System.out.println("il suo saldo è di: " + account.getBalance());
             // Visualizza le opzioni del menu
@@ -48,10 +50,11 @@ public class Bank {
                     System.out.println(res ? "Ok" : "account negativo"); // Visualizza un messaggio a seconda dell'esito del prelievo
                 }
                 break;
-                case 3:
+                case 3: {
                     // Caso 3: Uscita dal programma
-                    System.out.println("Saluti!");
-                    return; // Termina il programma
+                    System.out.println("Grazie e Arrivederci!");
+                    return;
+                }
             }
         }
     }
