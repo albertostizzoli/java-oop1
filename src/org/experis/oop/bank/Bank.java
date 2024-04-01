@@ -28,7 +28,7 @@ public class Bank {
             // Lettura della scelta dell'utente
             int number = scanner.nextInt();
 
-            // Verifica se il numero inserito è valido (1, 2 o 3), altrimenti continua il ciclo
+            // Verifica se il numero inserito è valido (1, 2 o 3) da poter continuare il ciclo
             if(number < 1 || number > 3) {
                 continue;
             }
@@ -40,6 +40,7 @@ public class Bank {
                     System.out.println("Quanto vuoi versare?");
                     int money = scanner.nextInt();
                     account.payMoney(money); // Chiamata al metodo payMoney dell'oggetto account
+                    System.out.println("Ok");
                 }
                 break;
                 case 2: {
@@ -47,7 +48,7 @@ public class Bank {
                     System.out.println("Quanto vuoi prelevare?");
                     int money = scanner.nextInt();
                     boolean res = account.getMoney(money); // Chiamata al metodo getMoney dell'oggetto account
-                    System.out.println(res ? "Ok" : "account negativo"); // Visualizza un messaggio a seconda dell'esito del prelievo
+                    System.out.println(res ? "Ok" : "Il tuo saldo è minore della quantità richiesta"); // Visualizza un messaggio a seconda dell'esito del prelievo
                 }
                 break;
                 case 3: {
